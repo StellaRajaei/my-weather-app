@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://unpkg.com/axios@1.20.0/dist/axios.min.js"></script>
+    <title>My weather application</title>
+  </head>
+  <body>
+    <div class="weather-app">
+      <header>
+        <form id="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search"
+            id="search-input"
+          />
+          <input type="submit" value="Search" class="submit" id="submit" />
+        </form>
+      </header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1>Paris</h1>
+            <p class="current-details">
+              <span id="day-and-time">Saturday 15:32</span>, moderate rain
+              <br />
+              Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temp">
+            <span class="current-temp-icon">☀️</span>
+            <span class="current-temp-value" id="current-temp-value"> 14</span>
+            <span class="current-temp-unit">°C</span>
+          </div>
+        </div>
+        <ul>
+          <li class="weather-coming">
+            <span class="day-of-week">Sun</span>
+            <span class="day-of-week-icon">🌤️ </span>
+            <br />
+            <span class="other-weathers">
+              <strong>14°</strong><span class="other-temp"> 18°</span>
+            </span>
+          </li>
+          <li class="weather-coming">
+            <span class="day-of-week">Mon</span>
+            <span class="day-of-week-icon">🌤️ </span>
+            <br />
+            <span class="other-weathers">
+              <strong>14°</strong><span class="other-temp"> 18°</span>
+            </span>
+          </li>
+          <li class="weather-coming">
+            <span class="day-of-week">Tue</span>
+            <span class="day-of-week-icon">🌤️ </span>
+            <br />
+            <span class="other-weathers">
+              <strong>14°</strong><span class="other-temp"> 18°</span>
+            </span>
+          </li>
+          <li class="weather-coming">
+            <span class="day-of-week">Wed</span>
+            <span class="day-of-week-icon">🌤️ </span>
+            <br />
+            <span class="other-weathers">
+              <strong>14°</strong><span class="other-temp"> 18°</span>
+            </span>
+          </li>
+          <li class="weather-coming">
+            <span class="day-of-week">Thu</span>
+            <span class="day-of-week-icon">🌤️ </span>
+            <br />
+            <span class="other-weathers">
+              <strong>14°</strong><span class="other-temp"> 18°</span>
+            </span>
+          </li>
+        </ul>
+      </main>
+      <footer>
+        <p>
+          This project was coded by
+          <a href="#" target="_blank">Setareh Rajaei</a> and is
+          <a href="#" target="_blank"> on GitHub</a> and
+          <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
